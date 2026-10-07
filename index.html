@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de Fiestas y Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PORTADA / HERO -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>SALÓN DE FIESTAS Y EVENTOS</h1>
+            <p>Hacemos de tu celebración un momento inolvidable</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>✨ Nuestros Servicios & Paquetes ✨</h2>
+
+        <div class="menu-grid">
+            
+            <!-- Tarjeta 1: Paquetes Todo Incluido -->
+            <div class="card" onclick="document.getElementById('modal-paquetes').style.display='flex'">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80" alt="Paquetes de Fiestas">
+                <div class="card-content">
+                    <h3>Paquetes Todo Incluido</h3>
+                    <p>Bodas, XV Años, Graduaciones y Fiestas Infantiles con todo resuelto.</p>
+                    <span class="price">Desde $15,000 MXN</span>
+                    <button class="btn-ver-menu">Ver Paquetes 🎟️</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Banquete y Menú -->
+            <div class="card" onclick="document.getElementById('modal-banquetes').style.display='flex'">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Banquete de Fiestas">
+                <div class="card-content">
+                    <h3>Banquete & Menús</h3>
+                    <p>Cenas a 3 tiempos, mesa de postres, taquizas y barra libre.</p>
+                    <span class="price">Desde $180 MXN / persona</span>
+                    <button class="btn-ver-menu">Ver Menú 🍽️</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Servicios Adicionales -->
+            <div class="card" onclick="document.getElementById('modal-servicios').style.display='flex'">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="DJ y Decoración">
+                <div class="card-content">
+                    <h3>Música, Show & Decoración</h3>
+                    <p>DJ profesional, luces robóticas, pista iluminada y arcos de globos.</p>
+                    <span class="price">Cotiza a tu medida</span>
+                    <button class="btn-ver-menu">Ver Servicios 🎶</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="https://wa.me/1234567890" class="btn-whatsapp" target="_blank">
+            💬 Cotizar tu Fecha por WhatsApp
+        </a>
+    </main>
+
+    <!-- VENTANA FLOTANTE 1 (MODAL PAQUETES) -->
+    <div id="modal-paquetes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('modal-paquetes').style.display='none'">&times;</span>
+            <h2>🎉 Paquetes de Eventos 🎉</h2>
+
+            <div class="modal-grid">
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=300&q=80" alt="Boda / XV Años">
+                    <div>
+                        <h4>Paquete Premium (100 Personas)</h4>
+                        <p>Incluye: Salón por 5 hrs, Banquete 3 tiempos, Meseros, DJ e Iluminación.</p>
+                        <span class="price">$35,000 MXN</span>
+                    </div>
+                </div>
+
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=300&q=80" alt="Fiesta Infantil">
+                    <div>
+                        <h4>Paquete Infantil & Cumpleaños (50 Personas)</h4>
+                        <p>Incluye: Inflable, Taquiza gourmet, Aguas frescas y Animador.</p>
+                        <span class="price">$15,000 MXN</span>
+                    </div>
+                </div>
+
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=300&q=80" alt="Evento Empresarial">
+                    <div>
+                        <h4>Paquete Corporativo</h4>
+                        <p>Incluye: Proyector, Audio HD, Coffee Break continuo y Mantelería fina.</p>
+                        <span class="price">$20,000 MXN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA FLOTANTE 2 (MODAL BANQUETES) -->
+    <div id="modal-banquetes" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('modal-banquetes').style.display='none'">&times;</span>
+            <h2>🍽️ Opciones de Banquete 🍰</h2>
+
+            <div class="modal-grid">
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80" alt="Cena 3 Tiempos">
+                    <div>
+                        <h4>Menú Formal (3 Tiempos)</h4>
+                        <p>Crema Gourmet, Lomo en salsa de ciruela / Lomo en crema y Guarnición.</p>
+                        <span class="price">$250 MXN / p/p</span>
+                    </div>
+                </div>
+
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=300&q=80" alt="Taquiza">
+                    <div>
+                        <h4>Taquiza Típica Gourmet</h4>
+                        <p>6 Guisados a elegir, tortillas hechas a mano, salsas y frijoles refritos.</p>
+                        <span class="price">$180 MXN / p/p</span>
+                    </div>
+                </div>
+
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=300&q=80" alt="Mesa de Postres">
+                    <div>
+                        <h4>Mesa de Dulces & Postres</h4>
+                        <p>Fuentes de chocolate, cupcakes, fruta picada y variedad de botanas saladas.</p>
+                        <span class="price">$3,500 MXN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VENTANA FLOTANTE 3 (MODAL SERVICIOS) -->
+    <div id="modal-servicios" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('modal-servicios').style.display='none'">&times;</span>
+            <h2>🎶 Servicios Adicionales 🎈</h2>
+
+            <div class="modal-grid">
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=300&q=80" alt="DJ y Sonido">
+                    <div>
+                        <h4>DJ Profesional & Iluminación</h4>
+                        <p>Cabina de DJ iluminada, audio profesional, luces LED y humo.</p>
+                        <span class="price">$5,000 MXN</span>
+                    </div>
+                </div>
+
+                <div class="modal-item">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=300&q=80" alt="Decoración con Globos">
+                    <div>
+                        <h4>Decoración Temática & Arcos</h4>
+                        <p>Decoración personalizada con arcos de globos, respaldos y letras gigantes.</p>
+                        <span class="price">$4,000 MXN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 SALÓN DE FIESTAS Y EVENTOS - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
